@@ -12,6 +12,37 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "rafamadriz/friendly-snippets",
+    enabled = false,
+  },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup {
+        suggestion = {
+          enabled = true,
+          auto_trigger = true,
+        },
+      }
+    end,
+  },
+  {
+    "Pocco81/auto-save.nvim",
+    event = "InsertLeave",
+    config = function()
+      require("auto-save").setup {}
+    end,
+  },
+  {
+    "stevearc/conform.nvim",
+    event = "BufWritePre",
+    config = function()
+      require "configs.conform"
+    end,
+  },
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
