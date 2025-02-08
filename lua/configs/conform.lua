@@ -3,12 +3,12 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    python = { "pyink" },
+    python = { "black" },
   },
 
   format_on_save = {
     --   -- These options will be passed to conform.format()
-    timeout_ms = 500,
+    timeout_ms = 2500,
     lsp_fallback = true,
   },
 }
