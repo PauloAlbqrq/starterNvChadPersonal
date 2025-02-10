@@ -5,6 +5,7 @@ local options = {
     html = { "prettier" },
     python = { "black" },
     c = { "clang-format" },
+    java = { "google-java-format" },
   },
 
   format_on_save = {
