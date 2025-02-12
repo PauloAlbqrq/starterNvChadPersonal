@@ -10,6 +10,8 @@ if not vim.uv.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+vim.opt.breakindent = true
+
 
 local lazy_config = require "configs.lazy"
 
@@ -35,3 +37,4 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
