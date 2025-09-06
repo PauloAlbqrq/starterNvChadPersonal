@@ -57,6 +57,9 @@ return {
     -- See Commands section for default commands if you want to lazy load on them
   },
 
+  -- test new blink
+  -- { import = "nvchad.blink.lazyspec" },
+
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
